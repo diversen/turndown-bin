@@ -1,4 +1,4 @@
-# convert-html-to-markdown
+# turndown-bin
 
 Simple wrapper for using `turndown` to transform `html` into `markdown`
 
@@ -6,14 +6,14 @@ Turndown can be found on [https://github.com/mixmark-io/turndown](https://github
 
 ### Install
 
-    npm install -g convert-html-to-markdown
+    npm install -g turndown-bin
 
 
 ### Usage
 
 Default options: 
 
-    convert-html-to-markdown --in tests/example.html --out tests/markdown.md
+    turndown-bin --in tests/example.html --out tests/markdown.md
 
 You may add a JSON config file for settings special options. 
 
@@ -36,7 +36,7 @@ This is the default options:
 }
 ```
 
-    convert-html-to-markdown --in tests/example.html --out tests/markdown.md --config config.json
+    turndown-bin --in tests/example.html --out tests/markdown.md --config config.json
 
 
 ### License
