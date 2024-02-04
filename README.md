@@ -1,19 +1,19 @@
-# turndown-cli
+# convert-html-to-markdown
 
-Simple wrapper for using `turndown` for transforming `html` into `markdown`
+Simple wrapper for using `turndown` to transform `html` into `markdown`
 
 Turndown can be found on [https://github.com/mixmark-io/turndown](https://github.com/mixmark-io/turndown)
 
 ### Install
 
-    npm install -g turndown-cli
+    npm install -g convert-html-to-markdown
 
 
 ### Usage
 
 Default options: 
 
-    turndown-cli --in tests/example.html --out tests/markdown.md
+    convert-html-to-markdown --in tests/example.html --out tests/markdown.md
 
 You may add a JSON config file for settings special options. 
 
@@ -36,8 +36,7 @@ This is the default options:
 }
 ```
 
-    turndown-cli --in tests/example.html --out tests/markdown.md --config config.json
-
+    convert-html-to-markdown --in tests/example.html --out tests/markdown.md --config config.json
 
 
 ### License

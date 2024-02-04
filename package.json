@@ -1,13 +1,13 @@
 {
   
-  "name": "turndown-cli",
+  "name": "convert-html-to-markdown",
   "author": "dennis iversen",
   "license": "MIT",
   "version": "1.0.0",
   "main": "index.js",
   "description": "CLI for converting HTML to Markdown",
   "bin": {
-    "turndown-cli": "cli.js"
+    "convert-html-to-markdown": "cli.js"
   },
   "dependencies": {
     "minimist-mini": "^2.0.9",
@@ -16,8 +16,9 @@
   "keywords": [
     "turndown",
     "turndown-cli",
+    "convert-html-to-markdown",
     "html-to-markdown"
   ],
-  "homepage": "https://github.com/diversen/turndown-cli",
+  "homepage": "https://github.com/diversen/convert-html-to-markdown",
   "type": "module"
 }
