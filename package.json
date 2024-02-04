@@ -5,7 +5,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "CLI for converting HTML to Markdown",
+  "description": "CLI tool for converting HTML to Markdown",
   "bin": {
     "turndown-bin": "cli.js"
   },
