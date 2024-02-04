@@ -11,9 +11,10 @@ opts.string = ['in'];
 opts.string = ['out'];
 opts.string = ['config'];
 opts.alias = { h: 'help', i: 'in', o: 'out', c: 'config' };
- 
+
 const m = minimist(opts);
 
+// Help message
 if (m.get('help')) {
     m.helpMessage();
     exit(0);
@@ -36,10 +37,37 @@ try {
     exit(1);
 }
 
+async function fetchFile(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.text();
+        return data;
+    } catch (error) {
+        console.log('Error fetching data: ', error);
+        exit(1);
+    }
+}
 
-// Try and read and convert the file
+
+// Get HTML source
+async function getHTMLSource() {
+    let htmlSource;
+
+    // If URL is provided, download the file
+    if (m.get('in').startsWith('http')) {
+        htmlSource = await fetchFile(m.get('in'));
+    } else {
+        htmlSource = fs.readFileSync(m.get('in'), 'utf8');
+    }
+    return htmlSource;
+}
+
+// Convert
 try {
-    const html = fs.readFileSync(m.get('in'), 'utf8');
+    const html = await getHTMLSource();
     const turndownService = new TurndownService(config);
     const markdown = turndownService.turndown(html);
     fs.writeFileSync(m.get('out'), markdown, 'utf8');
