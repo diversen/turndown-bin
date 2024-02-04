@@ -13,7 +13,6 @@ Turndown can be found on [https://github.com/mixmark-io/turndown](https://github
 
     turndown-cli --in tests/example.html --out tests/markdown.md
 
-
 ### License
 
 MIT
