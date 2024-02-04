@@ -6,8 +6,9 @@ Turndown can be found on [https://github.com/mixmark-io/turndown](https://github
 
 ### Install
 
+```sh
 npm install -g turndown-bin
-
+```
 
 ### Usage
 
@@ -43,6 +44,8 @@ This is the default options:
     "preformattedCode": false
 }
 ```
+
+Usage with options:
 
 ```sh
 turndown-bin --in tests/example.html --out tests/markdown.md --config config.json
