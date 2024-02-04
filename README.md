@@ -6,14 +6,22 @@ Turndown can be found on [https://github.com/mixmark-io/turndown](https://github
 
 ### Install
 
-    npm install -g turndown-bin
+npm install -g turndown-bin
 
 
 ### Usage
 
 Default options: 
 
-    turndown-bin --in tests/example.html --out tests/markdown.md
+```sh
+turndown-bin --in tests/example.html --out tests/markdown.md
+```
+
+From a URL:
+
+```sh
+turndown-bin --in https://github.com --out tests/markdown.md
+```
 
 You may add a JSON config file for settings special options. 
 
@@ -36,8 +44,9 @@ This is the default options:
 }
 ```
 
-    turndown-bin --in tests/example.html --out tests/markdown.md --config config.json
-
+```sh
+turndown-bin --in tests/example.html --out tests/markdown.md --config config.json
+```
 
 ### License
 
