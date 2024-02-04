@@ -3,7 +3,7 @@
   "name": "turndown-bin",
   "author": "dennis iversen",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "CLI tool for converting HTML to Markdown",
   "bin": {
