@@ -6,7 +6,7 @@
   "main": "index.js",
   "description": "CLI tool for converting HTML to Markdown",
   "bin": {
-    "turndown-bin": "cli.js"
+    "turndown-bin": "index.js"
   },
   "dependencies": {
     "minimist-mini": "^2.0.9",
