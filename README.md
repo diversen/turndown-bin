@@ -1,6 +1,6 @@
 # turndown-bin
 
-Simple wrapper for using `turndown` to transform `html` into `markdown`
+Simple CLI wrapper using `turndown` to transform `html` into `markdown`
 
 Turndown can be found on [https://github.com/mixmark-io/turndown](https://github.com/mixmark-io/turndown)
 
