@@ -1,0 +1,12 @@
+{
+    "headingStyle": "setext",
+    "hr": "* * *",
+    "bulletListMarker": "*",
+    "codeBlockStyle": "indented",
+    "fence": "```",
+    "emDelimiter": "_",
+    "strongDelimiter": "**",
+    "linkStyle": "inlined",
+    "linkReferenceStyle": "full",
+    "preformattedCode": false
+}
